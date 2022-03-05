@@ -1,0 +1,45 @@
+void main() {
+print("  MarkSheet     ");
+var name = "Huzaifa Khan";
+var roll_no = "19B-109-CS";
+num subj1 = 49;
+num subj2 = 50;
+num subj3 = 49;
+num subj4 = 66;
+num subj5 = 50;
+num marks_obt = subj1+subj2+subj3+subj4+subj5;
+num total_marks = 500;
+num percentage = (marks_obt/total_marks)*100;
+print('Name: $name');
+print('Roll No: $roll_no');
+print('Physics = $subj1');
+print('Chemistry = $subj2');
+print('Urdu = $subj3');
+print('English = $subj4');
+print('Maths = $subj5');
+print('Obtained Marks = $marks_obt');
+print('Total Marks = $total_marks');
+print('Percentage = $percentage');
+if(percentage > 79){
+  print("Grade: A-One");
+}
+else if(percentage > 69){
+  print("Grade: A");
+}
+else if(percentage > 59){
+  print("Grade: B");
+}
+else if(percentage > 49){
+  print("Grade: C");
+  
+}
+else if(percentage > 39){
+  print("Grade: D");
+  
+}
+else{
+  print("Fail");
+}
+
+  
+}
