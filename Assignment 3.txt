@@ -1,0 +1,95 @@
+(1)What are the various types of operators in dart? Explain with Examples.
+
+Ans: The various types of operators in dart are,
+
+1: Arithmetic Operators
+2: Relational Operators
+3: Type Test Operators
+4: Bitwise Operators
+5: Assignment Operators
+6: Logical Operators
+7: Conditional Operator
+8: Cascade Notation Operator
+
+(4)What is a difference between these operators “?? And ?”
+
+Ans: ??= It assign the value only if it is null.
+     ?= It means that name of variable can be null.
+
+(5)What are the data types supported in Dart? Explain with Examples.
+
+Ans: The data types which are supported in dart are:
+Number	
+Example: int a= 5	
+Strings
+Example: "Hello world"	
+Booleans
+Example: bool Var_name = true;	
+Lists
+Example: var =[1,4,5,7,9]	
+Maps
+Example: var identifier = new Map()
+
+(9) Declare 5 legal & 5 illegal variable names.
+
+Legal Variables: 
+
+int a = 5;
+double b = 5.5;
+String first_name = “XYZ”;
+bool isEnabled = false;
+List = [1,3,5,7]
+
+Illegal Variables: 
+
+int a = abc;
+double b = 15;
+String first_name = 123;
+bool isEnabled = hello world;
+List = xyz
+
+
+(13) Find 5 new methods of List and String.
+
+Ans: 5 methods of list are:
+
+1: Sublist: var myList= [1,2,3,4,5];
+ print(myList.sublist(1,3)); // [2,3]
+
+2: Shuffle: myList.shuffle();
+ print('$myList'); // [5,4,3,1,2]
+
+3: Reversed: var descList= [6,5,4,3,2,1];
+ print(descList.reversed.toList()); // [1,2,3,4,5,6]
+
+4: asMap(): List<String> sports = ['cricket', 'football', 'tennis', 'baseball'];
+ Map<int, String> map = sports.asMap();
+ print(map); // {0: cricket, 1: football, 2: tennis, 3: baseball}
+
+5: getRange:  var myList = [1, 2, 3, 4, 5];
+ print(myList.getRange(1,4)); // (2, 3, 4)
+
+5 methods of string are:
+
+1: Substring(): String str = "welcome";
+print(str[0].toUpperCase() + str.substring(1));  // Welcome
+
+2: Split(): String strList = "Welcome To Dart World";
+print(strList.split(' ')); // [Welcome, To, Dart, World]
+
+3: Allmatches(): String strNum = "This string has numbers 123456 and 78910";
+final iReg = RegExp(r'(\d+)');
+print(iReg.allMatches(strNum).map((m) => m.group(0)).join(' ')); 
+// 123456 78910
+
+4: Replacefirst(): String replace = "123def";
+final repReg = RegExp(r'\d{3}');
+print(replace.replaceFirst(repReg, 'abc')); // abcdef
+
+5: ReplaceAll(): String email = "johndoe@email.com";
+print(email.replaceAll(RegExp(r'(?<=.{1}).(?=.*@)'), '*')); 
+// j******@email.com 
+
+
+
+
